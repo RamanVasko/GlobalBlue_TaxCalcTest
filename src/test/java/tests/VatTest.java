@@ -27,7 +27,6 @@ public class VatTest extends Base {
         valueAddedTaxCalculatorPage.selectFromDropDown("Spain");
         valueAddedTaxCalculatorPage.selectVat10Rate();
         valueAddedTaxCalculatorPage.addPriceWithoutVat("1000");
-        //6Thread.sleep(5000);
         assertEquals("1100", valueAddedTaxCalculatorPage.getPriceInclVat());
     }
 }
